@@ -1,0 +1,9 @@
+header {
+    background-color: #2C3E50;
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    background-size: cover;
+}
+  
