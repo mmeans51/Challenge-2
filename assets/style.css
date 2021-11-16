@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 header {
     background-color: #AEB6BF;
     padding: 20px 35px;
@@ -8,11 +14,20 @@ header {
 }
   
 header h1{
-    font-size: 50pt;
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px; 
+}
+    
+header a {
+    text-decoration: none;
+    font-size: xx-large;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
+  }
 
-}
+
 
 header div ul li {
     padding-top: 15px;
@@ -22,4 +37,18 @@ header div ul li {
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.my-images {
+    margin: 20px;
+    flex: 1;
+    display: flex;
+    height: 500px;
+    width: 500px;
+    
+}
+
+.my-background h1 {
+    align-items: center;
+    font-size: xx-large;
 }
