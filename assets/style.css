@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     
+    
   }
 
   main {
@@ -152,5 +153,4 @@ main h1 {
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
 }
