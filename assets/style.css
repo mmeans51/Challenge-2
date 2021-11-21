@@ -2,53 +2,155 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
   }
 
+  main {
+    background-color: rgb(46, 234, 228);   
+  }
 header {
-    background-color: #AEB6BF;
+    background-color:#499795;
     padding: 20px 35px;
     display: flex;
     flex-wrap: wrap;
-    position: -webkit-sticky;
+    position: sticky;
+    position:-webkit-sticky;
     background-size: cover;
+    justify-content: space-between;
 }
   
 header h1{
     font-weight: bold;
-    margin: 0;
-    font-size: 36px; 
-}
+    font-size: 150px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+
     
-header a {
-    text-decoration: none;
-    font-size: xx-large;
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+
+  header nav ul li {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items:flex-end;
+    border: 1px solid black;
+    
+   
+    
+  }
+
+  header nav ul li a:hover {
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+aside {
+    background-color: rgb(46, 234, 228);
+}
+ aside div  {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+aside h1 {
+   display: flex;
+   justify-content: center;
+    font-size: 50pt;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main h2 {
+    border: 3px solid cornflowerblue;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: -20px;
+    vertical-align: bottom;
+    position: relative;
+    margin: 3.5%;
+    text-align: center;
+  }
+main h1 {
+    display: flex;
+    justify-content: center;
+     font-size: 50pt;
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }  
+ 
+#my-work h2 {
+    border: 3px solid cornflowerblue;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: -20px;
+    vertical-align: bottom;
+    position: relative;
+    margin: 3.5%;
+    text-align: center; 
+}
+
+.runbuddy img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 100%;
+    height: auto; 
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .mywork {
+      font-size: 50pt;
   }
 
 
 
-header div ul li {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'calibri' 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
+  
 
-.my-images {
-    margin: 20px;
-    flex: 1;
-    display: flex;
-    height: 500px;
-    width: 500px;
-    
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
 }
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
 
-.my-background h1 {
-    align-items: center;
-    font-size: xx-large;
 }
